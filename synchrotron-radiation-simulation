@@ -1,0 +1,17 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Physical constants
+q = 1.602e-19       # Coulomb
+m = 9.109e-31       # kg (electron mass)
+c = 2.998e8         # m/s
+epsilon0 = 8.854e-12
+
+# Simulation parameters
+B = 1.0             # Tesla
+v = 0.9 * c         # particle speed
+gamma = 1 / np.sqrt(1 - (v/c)**2)
+
+print("Magnetic field B =", B, "T")
+print("Particle speed v =", v, "m/s")
+print("Lorentz factor gamma =", gamma)
